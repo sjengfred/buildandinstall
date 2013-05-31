@@ -22,6 +22,7 @@ cd .. && rm -r unrar-nonfree
 ## packages
 
 dpkg -i allclones/xbian-package-autosub*.deb
+dpkg -i allclones/xbian-package-hdmimonitor*.deb
 dpkg -i allclones/xbian-package-nzbget*.deb
 dpkg -i allclones/xbian-package-couchpotato*.deb
 dpkg -i allclones/xbian-package-sickbeard*.deb
