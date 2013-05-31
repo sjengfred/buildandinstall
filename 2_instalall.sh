@@ -8,6 +8,15 @@
 # 
 # after install: change priorities and reboot (after database migrations)
 
+while true; do
+	read -p "Have you made the required manual changes? (yes/no) " yn
+		case $yn in
+			yes ) 	break;;
+        		no )   exit 1;;
+       			* ) echo "Please answer yes or no.";;
+		esac
+done
+
 apt-get update
 apt-get upgrade
 
@@ -26,5 +35,5 @@ dpkg -i allclones/xbian-package-hdmimonitor*.deb
 dpkg -i allclones/xbian-package-nzbget*.deb
 dpkg -i allclones/xbian-package-couchpotato*.deb
 dpkg -i allclones/xbian-package-sickbeard*.deb
-
+dpkg -i allclones/xbian-package-webcontrol*.deb
 
